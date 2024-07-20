@@ -1,0 +1,193 @@
+:root {
+  --primary-font-color: #282828;
+  --secondary-font-color: #484848;
+  --background-color: #ffcd9e;
+  --border-radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+/* --------------- */
+/* HEADER SECTION */
+/* --------------- */
+
+header {
+  width: 100%;
+  height: 70%;
+  background-color: var(--background-color);
+  padding: 80px;
+
+  display: flex;
+}
+
+.textarea {
+  width: 50%;
+}
+
+.textarea .text1 {
+  width: 90%;
+  color: var(--primary-font-color);
+  font-size: 40px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.textarea .text2 {
+  width: 70%;
+  color: var(--secondary-font-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 32px;
+}
+
+.textarea h3 {
+  margin-bottom: 32px;
+}
+
+.textarea .form {
+  margin-bottom: 16px;
+}
+
+.textarea .form input {
+  width: 50%;
+  padding: 12px 24px;
+  border: 4px solid black;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.textarea .form button {
+  background-color: var(--primary-font-color);
+  color: #fff;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 4px solid var(--primary-font-color);
+  border-radius: var(--border-radius);
+}
+
+.textarea .white {
+  color: #fff;
+  margin-left: 16px;
+}
+
+.hatguy {
+  width: 50%;
+  height: 120%;
+  padding: 24px;
+}
+
+.hatguy img {
+  width: 110%;
+  height: 110%;
+
+  object-fit: contain;
+}
+
+/* --------------- */
+/* FOOTER SECTION  */
+/* --------------- */
+
+footer {
+  width: 100%;
+  height: 30%;
+  background-color: #282828;
+  color: #fff;
+  padding: 48px 96px;
+  font-weight: 400;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer1,
+.footer2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer2 {
+  text-align: end;
+}
+
+.footer2 .socials {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  /* HEADER SECTION */
+
+  header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 60%;
+  }
+
+  .hatguy {
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+  }
+
+  .textarea .text1 {
+    width: 100%;
+    font-size: 6.2vw;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .textarea .h3 {
+    width: 100%;
+    font-size: 4vw;
+    margin-bottom: 32px;
+  }
+
+  .textarea h3 {
+    margin-bottom: 20px;
+  }
+
+  .textarea .form {
+    margin-bottom: 16px;
+  }
+
+  .textarea .form input {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  /* FOOTER SECTION */
+  footer {
+    width: 100%;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
